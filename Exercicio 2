@@ -1,0 +1,49 @@
+
+public class ContaBanco {
+	
+	double Saldo;
+	
+	String Numero;
+
+	
+	public void Creditar(double valor){
+		
+		this.Saldo=this.Saldo+valor;
+		System.out.println("Valor creditado. Saldo Atual:");
+		
+	}
+	
+  public void Debitar(double debito){
+		
+	  	this.Saldo=this.Saldo-debito;
+		System.out.println("Valor debitado. Saldo Atual:");
+
+		
+	}
+
+public static void main(String[] args) {
+	
+	ContaBanco Conta;
+	Conta = new ContaBanco();
+	
+	Conta.Numero="Lala";
+	Conta.Saldo=50;
+	
+	Conta.Debitar(20);
+	System.out.println(Conta.Saldo);
+	
+	ContaBanco Conta1;
+	Conta1 = new ContaBanco();
+	
+	Conta1.Numero="POO";
+	Conta1.Saldo=20;
+	
+	Conta1.Creditar(35);
+	System.out.println(Conta1.Saldo);
+	
+	
+}
+}
+
+
+ 
